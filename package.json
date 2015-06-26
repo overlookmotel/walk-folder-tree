@@ -1,0 +1,49 @@
+{
+  "name": "walk-folder-tree",
+  "version": "0.0.0",
+  "description": "Recursively walk file system tree and callback on every file",
+  "main": "./lib/",
+  "author": {
+    "name": "Overlook Motel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overlookmotel/walk-folder-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overlookmotel/walk-folder-tree/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "chai": "^2.3.0",
+	"jshint": "^2.7.0",
+    "istanbul": "^0.3.14",
+    "coveralls": "^2.11.2"
+  },
+  "keywords": [
+    "walk",
+    "walker",
+    "fs",
+    "file",
+    "system",
+    "folder",
+    "directory",
+    "promise"
+  ],
+  "scripts": {
+    "test": "make test",
+    "cover": "make cover"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readmeFilename": "README.md",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/overlookmotel/walk-folder-tree/raw/master/License"
+    }
+  ]
+}
