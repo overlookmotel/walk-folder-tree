@@ -9,6 +9,6 @@
 * Add filename to params
 * README
 
-## Next
+## 0.1.2
 
 * README update
