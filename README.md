@@ -24,11 +24,11 @@ API is stable.
 var walk = require('walk-folder-tree');
 ```
 
-### walk(path, fn [,options])
+### walk(path [, fn] [, options])
 
 Recursively walks through the directory tree from `path` downwards, calling `fn` on every file and directory.
 
-`fn` is called with the single arguments `params`. `params` is of the form:
+`fn` is called with the single argument `params`. `params` is of the form:
 
 ```js
 {
@@ -76,7 +76,7 @@ walk('/path/to/folder', function*(params) {
 
 #### recurse
 
-When `true`, recurses through subfolders and sub-subfolders requiring an entire tree. Set to `false` to ignore subfolders.
+When `true`, recurses through subfolders and sub-subfolders, examining an entire tree. Set to `false` to ignore subfolders.
 Defaults to `true`.
 
 ```js
@@ -85,7 +85,7 @@ walk('/path/to/folder', fn, { recurse: false });
 
 #### filterFiles
 
-A regular expression for what files to include. First matching group defines the key used in returned object.
+A regular expression for what files to include.
 Defaults to `/^[^.]/` (i.e. ignore files starting with `.`)
 
 ```js
@@ -95,7 +95,7 @@ walk('/path/to/folder', fn, { filterFiles: /^.*$/ });
 
 #### filterFolders
 
-A regular expression for what folders to iterate into. First matching group defines the key used in returned object.
+A regular expression for what folders to iterate into.
 Defaults to `/^[^.]/` (i.e. process all folders except those beginning with `.`)
 
 ```js
