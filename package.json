@@ -1,6 +1,6 @@
 {
   "name": "walk-folder-tree",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Recursively walk file system tree and callback on every file",
   "main": "./lib/",
   "author": {

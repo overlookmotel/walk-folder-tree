@@ -17,7 +17,7 @@
 
 * Fix module name in README
 
-## Next
+## 1.0.0
 
 * Fix bug with filterFiles and filterFolders options
 * Switch arguments order to (path, options, fn)
