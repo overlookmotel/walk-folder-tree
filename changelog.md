@@ -27,7 +27,7 @@
 * Code tidy
 * Correct README typo
 
-## Next
+## 1.0.1
 
 * Update promisify-any dependency
 * Update fs-extra-promise dependency
