@@ -19,5 +19,6 @@
 
 ## Next
 
+* Fix bug with filterFiles and filterFolders options
 * Code tidy
 * Correct README typo
