@@ -109,7 +109,7 @@ If set to `true`, returns an array of all files and folders found.
 Defaults to `false`.
 
 ```js
-walk('/path/to/folder').then(function(files) {
+walk('/path/to/folder', { return: true }).then(function(files) {
     // files is array of params object for each file
 });
 ```

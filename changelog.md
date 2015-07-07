@@ -20,3 +20,4 @@
 ## Next
 
 * Code tidy
+* Correct README typo
