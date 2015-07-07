@@ -20,6 +20,7 @@
     "promisify-any": "0.0.6"
   },
   "devDependencies": {
+    "generator-supported": "0.0.1",
     "mocha": "^2.2.4",
     "chai": "^2.3.0",
     "jshint": "^2.7.0",

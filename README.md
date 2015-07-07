@@ -146,8 +146,6 @@ walk('/path/to/folder', {
 
 Use `npm test` to run the tests. Use `npm run cover` to check coverage.
 
-But there are no tests at present!
-
 ## Changelog
 
 See changelog.md
