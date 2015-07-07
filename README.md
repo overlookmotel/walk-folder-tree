@@ -16,7 +16,7 @@ API is stable.
 
 ### Installation
 
-    npm install promisify-any
+    npm install walk-folder-tree
 
 ### Loading
 
