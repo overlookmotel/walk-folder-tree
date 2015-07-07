@@ -12,3 +12,7 @@
 ## 0.1.2
 
 * README update
+
+## Next
+
+* Fix module name in README
