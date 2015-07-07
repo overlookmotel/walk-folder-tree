@@ -24,7 +24,7 @@ API is stable.
 var walk = require('walk-folder-tree');
 ```
 
-### walk(path [, fn] [, options])
+### walk(path [, options] [, fn])
 
 Recursively walks through the directory tree from `path` downwards, calling `fn` on every file and directory.
 
@@ -48,6 +48,20 @@ walk('/path/to/folder', function(params, cb) {
     cb();
 }).then(function() {
     // do something else
+});
+```
+
+#### walk(options)
+
+`path` and `fn` can also be provided as attributes of `options`
+
+```js
+walk({
+    path: '/path/to/folder',
+    fn: function(params, cb) {
+        console.log('Found file: ', params.path);
+        cb();
+    }
 });
 ```
 
@@ -80,7 +94,7 @@ When `true`, recurses through subfolders and sub-subfolders, examining an entire
 Defaults to `true`.
 
 ```js
-walk('/path/to/folder', fn, { recurse: false });
+walk('/path/to/folder', { recurse: false }, fn);
 ```
 
 #### filterFiles
@@ -90,7 +104,7 @@ Defaults to `/^[^.]/` (i.e. ignore files starting with `.`)
 
 ```js
 // include all files
-walk('/path/to/folder', fn, { filterFiles: /^.*$/ });
+walk('/path/to/folder', { filterFiles: /^.*$/ }, fn);
 ```
 
 #### filterFolders
@@ -100,7 +114,7 @@ Defaults to `/^[^.]/` (i.e. process all folders except those beginning with `.`)
 
 ```js
 // Process all folders except those starting with `.` or `_`
-walk('/path/to/folder', fn, { filterFolders: /^[^\._]/ });
+walk('/path/to/folder', { filterFolders: /^[^\._]/ }, fn);
 ```
 
 #### return
@@ -119,13 +133,13 @@ walk('/path/to/folder', { return: true }).then(function(files) {
 Function to sort files in each folder before processing.
 
 ```js
-walk('/path/to/folder', fn, {
+walk('/path/to/folder', {
     sort: function(a, b) {
         if (a > b) return -1;
         if (a < b) return 1;
         return 0;
     }
-});
+}, fn);
 ```
 
 ## Tests

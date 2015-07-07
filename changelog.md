@@ -20,5 +20,7 @@
 ## Next
 
 * Fix bug with filterFiles and filterFolders options
+* Switch arguments order to (path, options, fn)
+* Flexible arguments to allow ({path: [path], fn: [fn]})
 * Code tidy
 * Correct README typo
