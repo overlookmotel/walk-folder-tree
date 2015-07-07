@@ -16,3 +16,7 @@
 ## 0.1.3
 
 * Fix module name in README
+
+## Next
+
+* Code tidy
