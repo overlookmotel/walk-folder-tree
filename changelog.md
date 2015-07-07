@@ -30,3 +30,4 @@
 ## Next
 
 * Update promisify-any dependency
+* Update fs-extra-promise dependency
