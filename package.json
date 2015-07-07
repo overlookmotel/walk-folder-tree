@@ -17,7 +17,7 @@
     "bluebird": "^2.9.30",
     "fs-extra-promise": "^0.1.3",
     "lodash": "3.8.0",
-    "promisify-any": "0.0.6"
+    "promisify-any": "^1.0.0"
   },
   "devDependencies": {
     "generator-supported": "0.0.1",

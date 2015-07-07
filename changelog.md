@@ -26,3 +26,7 @@
 * Tests run with `node --harmony`
 * Code tidy
 * Correct README typo
+
+## Next
+
+* Update promisify-any dependency
