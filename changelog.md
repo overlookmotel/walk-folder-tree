@@ -23,5 +23,6 @@
 * Switch arguments order to (path, options, fn)
 * Flexible arguments to allow ({path: [path], fn: [fn]})
 * Tests
+* Tests run with `node --harmony`
 * Code tidy
 * Correct README typo

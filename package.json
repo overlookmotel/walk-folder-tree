@@ -39,6 +39,7 @@
   ],
   "scripts": {
     "test": "make test",
+    "test-harmony": "make test-harmony",
     "cover": "make cover"
   },
   "engines": {
