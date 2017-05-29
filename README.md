@@ -1,5 +1,7 @@
 # walk-folder-tree.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/overlookmotel/walk-folder-tree.svg)](https://greenkeeper.io/)
+
 # Recursively walk file system tree and callback on every file
 
 ## Current status
