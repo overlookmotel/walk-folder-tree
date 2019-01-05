@@ -14,18 +14,16 @@
     "url": "https://github.com/overlookmotel/walk-folder-tree/issues"
   },
   "dependencies": {
-    "bluebird": "^2.9.30",
-    "fs-extra-promise": "^0.2.0",
-    "lodash": "3.8.0",
-    "promisify-any": "^1.0.0"
+    "bluebird": "^3.5.3",
+    "promisify-any": "^2.0.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
     "generator-supported": "0.0.1",
-    "mocha": "^2.2.4",
-    "chai": "^2.3.0",
+    "istanbul": "^0.4.5",
     "jshint": "^2.7.0",
-    "istanbul": "^0.3.14",
-    "coveralls": "^2.11.2"
+    "mocha": "^5.2.0"
   },
   "keywords": [
     "walk",
